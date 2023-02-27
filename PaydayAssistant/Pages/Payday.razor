@@ -1,0 +1,80 @@
+﻿@page "/counter"
+@using AutoBanker
+@using System.Net.Sockets
+
+<PageTitle>Payday</PageTitle>
+
+<div class="balance">
+    <label>Balance</label>
+    <span class="balance-amount">£@Balance</span>
+    <button class="pay-me" @onclick="PayMe">Pay Me (Remaining: £@RemainingBalance)</button>
+</div>
+
+<div class="spaces">
+    @foreach (var space in Spaces)
+    {
+        <div class="space @(space.Selected ? "active" : "")" @onclick="() => space.ToggleSelected(RemainingBalance)">
+            <p class="space-name">@space.Name</p>
+            <p class="space-amount">£@space.Amount</p>
+        </div>
+    }
+</div>
+
+
+@code {
+    [Inject] private StarlingService _starlingService { get; set; }
+    public decimal Balance { get; set; }
+    public List<SpaceAction> Spaces { get; set; } = new List<SpaceAction>();
+    private string AccountId { get; set; }
+    private decimal RemainingBalance => Balance - Spaces.Where(m => m.Selected).Sum(m => m.Amount);
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetAccountId();
+        await GetBalance();
+        await GetSavingsGoals();
+    }
+
+    private async Task GetAccountId()
+    {
+        AccountId = await _starlingService.GetFirstAccount();
+    }
+
+    private async Task GetSavingsGoals()
+    {
+        Spaces = (await _starlingService.GetSavingsGoalsActions(AccountId)).ToList();
+    }
+
+    async Task GetBalance()
+    {
+        Balance = await _starlingService.GetBalance(AccountId);
+    }
+
+    private void OnSpaceClick(SpaceAction space)
+    {
+        if (RemainingBalance - space.Amount <= 0)
+            return;
+        // Find the index of the space object in the Spaces list
+        int index = Spaces.IndexOf(space);
+
+        if (index != -1)
+        {
+            // Update the Selected value of the space object in the Spaces list
+            Spaces[index].Selected = !Spaces[index].Selected;
+            StateHasChanged();
+        }
+    }
+
+    private async Task PayMe(MouseEventArgs arg)
+    {
+        foreach (var space in Spaces)
+        {
+            if (space.Selected)
+            {
+                await _starlingService.TransferToSpace(space);
+                await OnInitializedAsync();
+            }
+        }
+    }
+
+}
