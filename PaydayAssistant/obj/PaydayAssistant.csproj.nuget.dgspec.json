@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\Test\\PaydayAssistant\\PaydayAssistant\\PaydayAssistant.csproj": {}
+    "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj": {}
   },
   "projects": {
-    "C:\\Code\\Test\\PaydayAssistant\\PaydayAssistant\\PaydayAssistant.csproj": {
+    "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\Test\\PaydayAssistant\\PaydayAssistant\\PaydayAssistant.csproj",
+        "projectUniqueName": "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj",
         "projectName": "PaydayAssistant",
-        "projectPath": "C:\\Code\\Test\\PaydayAssistant\\PaydayAssistant\\PaydayAssistant.csproj",
-        "packagesPath": "C:\\Users\\JHadmin4\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\Test\\PaydayAssistant\\PaydayAssistant\\obj\\",
+        "projectPath": "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj",
+        "packagesPath": "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\payday-assistant\\PaydayAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JHadmin4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jack.Hoyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,9 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.harrogate.jet2.com/api/v2/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://jet2tfs.pkgs.visualstudio.com/_packaging/Ecommerce-Feed/nuget/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

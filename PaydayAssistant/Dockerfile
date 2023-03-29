@@ -5,18 +5,18 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim-amd64 AS build
 WORKDIR /src
-COPY ["PaydayAssistant/PaydayAssistant.csproj", "PaydayAssistant/"]
-RUN dotnet restore "PaydayAssistant/PaydayAssistant.csproj"
+COPY ["PaydayAssistant.csproj", ""]
+RUN dotnet restore "PaydayAssistant.csproj"
 COPY . .
-WORKDIR "/src/PaydayAssistant"
+WORKDIR "/src/"
 RUN dotnet build "PaydayAssistant.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "PaydayAssistant.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/runtime:7.0
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "PaydayAssistant.dll"]
