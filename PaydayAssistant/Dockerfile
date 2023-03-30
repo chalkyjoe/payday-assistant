@@ -8,13 +8,13 @@ EXPOSE 443
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["PaydayAssistant.csproj", ""]
-RUN dotnet restore "PaydayAssistant.csproj"
+RUN dotnet restore "PaydayAssistant.csproj" -r linux-arm64
 COPY . .
 WORKDIR "/src/"
-RUN dotnet build "PaydayAssistant.csproj" -c Release -o /app/build
+RUN dotnet build "PaydayAssistant.csproj" -c Release -r linux-arm64 --no-self-contained -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "PaydayAssistant.csproj" --os linux --arch arm64 -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "PaydayAssistant.csproj" -r linux-arm64 -c Release --no-self-contained -o /app/publish
 
 FROM base as final
 WORKDIR /app
