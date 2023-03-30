@@ -5,7 +5,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim-arm64 AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim AS build
 WORKDIR /src
 COPY ["PaydayAssistant.csproj", ""]
 RUN dotnet restore "PaydayAssistant.csproj"
