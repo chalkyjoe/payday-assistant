@@ -16,7 +16,7 @@ RUN dotnet build "PaydayAssistant.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "PaydayAssistant.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-FROM mcr.microsoft.com/dotnet/runtime:7.0
+FROM mcr.microsoft.com/dotnet/runtime:7.0.4-bullseye-slim-arm64v8
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "PaydayAssistant.dll"]
