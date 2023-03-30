@@ -11,7 +11,6 @@ COPY ["PaydayAssistant.csproj", ""]
 RUN dotnet restore "PaydayAssistant.csproj"
 COPY . .
 WORKDIR "/src/"
-RUN nuget.exe restore PaydayAssistant.csproj -SolutionDirectory ../ -Verbosity normal
 RUN dotnet build "PaydayAssistant.csproj" -c Release -o /app/build
 
 FROM build AS publish

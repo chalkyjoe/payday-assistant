@@ -8,14 +8,12 @@
     ".NETCoreApp,Version=v7.0": {
       "PaydayAssistant/1.0.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.0",
           "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "PaydayAssistant.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {},
       "Newtonsoft.Json/13.0.2": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -31,13 +29,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gfDtAL1WhkjbRdbZlt/ZeQYCbgRpNCZCGj+yeqHObsNFRDHjq8qZJOX9AyTxJpSRYMi9SJk7JDyAbbVYRgEhAA==",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.0",
-      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.2": {
       "type": "package",
