@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\Jack.Hoyle\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.net.build.containers\0.4.0\build\Microsoft.NET.Build.Containers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.build.containers\0.4.0\build\Microsoft.NET.Build.Containers.props')" />
+  </ImportGroup>
 </Project>

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fm/gufpJefHJyRmJDacNizryd2n7Fax3iLQ6div8GRpAu2gyuHTxg1ndQNXE937jnJoBcmxIGigS+hPOUWQeew==",
+  "dgSpecHash": "R90TjP1jJzoNUm6zfJ5xLGRfSNt1oVQaAxNmHGhnMWtAH7AyGnojF6cC1AOILBwu33gXwMvtf0ErYyVjyvLOMg==",
   "success": true,
   "projectFilePath": "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.net.build.containers\\0.4.0\\microsoft.net.build.containers.0.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

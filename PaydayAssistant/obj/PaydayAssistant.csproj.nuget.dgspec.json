@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Build.Containers": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
