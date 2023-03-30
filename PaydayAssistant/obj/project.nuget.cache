@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2slV9NcxJ/VJ6AvWtu55lf/P6rpLxfXd6ln4SWBRMIHNiAXZn+ldxRi0izpt6pimuczUaWwdtc2ZIUHcRoJnvg==",
+  "dgSpecHash": "fm/gufpJefHJyRmJDacNizryd2n7Fax3iLQ6div8GRpAu2gyuHTxg1ndQNXE937jnJoBcmxIGigS+hPOUWQeew==",
   "success": true,
   "projectFilePath": "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,5 +1,5 @@
 ﻿using System.Net.Http.Headers;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace AutoBanker
 {
@@ -18,7 +18,7 @@ namespace AutoBanker
             var response = await GetAsync($"/api/v2/accounts/{accountId}/balance");
 
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<StarlingBalance>(await response.Content.ReadAsStringAsync());
+                return JsonSerializer.Deserialize<StarlingBalance>(await response.Content.ReadAsStringAsync());
             throw new ApplicationException(response.ReasonPhrase);
         }
 
@@ -27,7 +27,7 @@ namespace AutoBanker
             var response = await GetAsync($"/api/v2/account/{accountId}/savings-goals");
             
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<SavingsGoalsResponse>(await response.Content.ReadAsStringAsync());
+                return JsonSerializer.Deserialize<SavingsGoalsResponse>(await response.Content.ReadAsStringAsync());
             throw new ApplicationException(response.ReasonPhrase);
         }
 
@@ -35,7 +35,7 @@ namespace AutoBanker
         {
             var response = await GetAsync("api/v2/accounts");
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<AccountsResponse>(await response.Content.ReadAsStringAsync());
+                return JsonSerializer.Deserialize<AccountsResponse>(await response.Content.ReadAsStringAsync());
             throw new ApplicationException(response.ReasonPhrase);
         }
 
@@ -50,9 +50,9 @@ namespace AutoBanker
                 }
             };
 
-            var response = await PutAsync($"api/v2/account/{accountId}/savings-goals/{spaceId}/add-money/{Guid.NewGuid()}", new StringContent(JsonConvert.SerializeObject(body, new JsonSerializerSettings() { }), new MediaTypeHeaderValue("application/json")));
+            var response = await PutAsync($"api/v2/account/{accountId}/savings-goals/{spaceId}/add-money/{Guid.NewGuid()}", new StringContent(JsonSerializer.Serialize(body), new MediaTypeHeaderValue("application/json")));
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<StarlingTransferResponse>(await response.Content.ReadAsStringAsync());
+                return JsonSerializer.Deserialize<StarlingTransferResponse>(await response.Content.ReadAsStringAsync());
             throw new ApplicationException(response.ReasonPhrase);
         }
     }

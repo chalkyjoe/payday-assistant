@@ -40,7 +40,6 @@ C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.deps.j
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.runtimeconfig.json
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.dll
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.pdb
-C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.csproj.AssemblyReference.cache
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.GeneratedMSBuildEditorConfig.editorconfig
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.AssemblyInfoInputs.cache
@@ -60,7 +59,6 @@ C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\Shared\MainL
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\bundle\PaydayAssistant.styles.css
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\projectbundle\PaydayAssistant.bundle.scp.css
-C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.csproj.CopyComplete
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.dll
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\refint\PaydayAssistant.dll
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.pdb
