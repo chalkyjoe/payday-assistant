@@ -14,7 +14,7 @@ WORKDIR "/src/"
 RUN dotnet build "PaydayAssistant.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "PaydayAssistant.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "PaydayAssistant.csproj" --os linux --arch arm64 -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base as final
 WORKDIR /app
