@@ -1,151 +1,144 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h1:focus {
-    outline: none;
-}
-
-a, .btn-link {
-    color: #0071c1;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-.content {
-    padding-top: 1.1rem;
-}
-
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
-}
-
-.invalid {
-    outline: 1px solid red;
-}
-
-.validation-message {
-    color: red;
-}
-
-#blazor-error-ui {
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
-
-.blazor-error-boundary {
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDAiPjxyZWN0IHg9IjIzNSIgeT0iNTEiIHdpZHRoPSI1NiIgaGVpZ2h0PSI0OSIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzUgLTUxKSI+PHBhdGggZD0iTTI2My41MDYgNTFDMjY0LjcxNyA1MSAyNjUuODEzIDUxLjQ4MzcgMjY2LjYwNiA1Mi4yNjU4TDI2Ny4wNTIgNTIuNzk4NyAyNjcuNTM5IDUzLjYyODMgMjkwLjE4NSA5Mi4xODMxIDI5MC41NDUgOTIuNzk1IDI5MC42NTYgOTIuOTk2QzI5MC44NzcgOTMuNTEzIDI5MSA5NC4wODE1IDI5MSA5NC42NzgyIDI5MSA5Ny4wNjUxIDI4OS4wMzggOTkgMjg2LjYxNyA5OUwyNDAuMzgzIDk5QzIzNy45NjMgOTkgMjM2IDk3LjA2NTEgMjM2IDk0LjY3ODIgMjM2IDk0LjM3OTkgMjM2LjAzMSA5NC4wODg2IDIzNi4wODkgOTMuODA3MkwyMzYuMzM4IDkzLjAxNjIgMjM2Ljg1OCA5Mi4xMzE0IDI1OS40NzMgNTMuNjI5NCAyNTkuOTYxIDUyLjc5ODUgMjYwLjQwNyA1Mi4yNjU4QzI2MS4yIDUxLjQ4MzcgMjYyLjI5NiA1MSAyNjMuNTA2IDUxWk0yNjMuNTg2IDY2LjAxODNDMjYwLjczNyA2Ni4wMTgzIDI1OS4zMTMgNjcuMTI0NSAyNTkuMzEzIDY5LjMzNyAyNTkuMzEzIDY5LjYxMDIgMjU5LjMzMiA2OS44NjA4IDI1OS4zNzEgNzAuMDg4N0wyNjEuNzk1IDg0LjAxNjEgMjY1LjM4IDg0LjAxNjEgMjY3LjgyMSA2OS43NDc1QzI2Ny44NiA2OS43MzA5IDI2Ny44NzkgNjkuNTg3NyAyNjcuODc5IDY5LjMxNzkgMjY3Ljg3OSA2Ny4xMTgyIDI2Ni40NDggNjYuMDE4MyAyNjMuNTg2IDY2LjAxODNaTTI2My41NzYgODYuMDU0N0MyNjEuMDQ5IDg2LjA1NDcgMjU5Ljc4NiA4Ny4zMDA1IDI1OS43ODYgODkuNzkyMSAyNTkuNzg2IDkyLjI4MzcgMjYxLjA0OSA5My41Mjk1IDI2My41NzYgOTMuNTI5NSAyNjYuMTE2IDkzLjUyOTUgMjY3LjM4NyA5Mi4yODM3IDI2Ny4zODcgODkuNzkyMSAyNjcuMzg3IDg3LjMwMDUgMjY2LjExNiA4Ni4wNTQ3IDI2My41NzYgODYuMDU0N1oiIGZpbGw9IiNGRkU1MDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvZz48L3N2Zz4=) no-repeat 1rem/1.8rem, #b32121;
-    padding: 1rem 1rem 1rem 3.7rem;
-    color: white;
-}
-
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
-
-* {
-    font-family: Helvetica;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #444;
-    color: #DDD;
-}
-
-.balance {
-    background-color: #01172F;
-    margin: 1rem auto;
-    width: 40%;
-    text-align: center;
-    padding-top: 1rem;
-    box-shadow: 1px 1px 5px #333;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px #222;
-}
-
-label {
-    display: block;
-}
-
-.pay-me {
-    display: block;
-    margin: auto;
-    background-color: #00635D;
-    border: 0;
-    width: 100%;
-    padding: 1rem 0;
-    margin-top: .5rem;
-    color: #DDD;
-    cursor: pointer;
-}
-
-.spaces {
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
-.space {
-    display: block;
-    margin: .25rem 0;
-    width: 100%;
+.container {
+    display: flex;
     position: relative;
-    background-color: #01172F;
-    padding: 1rem;
-    box-sizing: border-box;
-    color: #555;
-    border: 0px solid #01172F;
-    border-left-width: 5px;
-    box-shadow: 1px 1px 4px #222;
-    cursor: pointer;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 800px;
+    margin: auto;
+    background-color: hsl(0, 0%, 5%);
+    font-family: "Open Sans", "Microsoft JhengHei", Arial, sans-serif;
 }
 
-.space.active {
-    border-color: #fb6107;
-    color: #DDD;
+.column {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
 }
 
-.space.paid {
-    border-color: #7cb518;
+.card {
+    flex: 1;
+    background-color: #ccc;
+    margin: 0.25rem;
+    text-decoration: none;
 }
 
-.space.failed {
-    border-color: #e70e02;
+.starling {
+    background-color: #6935D3;
+    color: #192851;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.money {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    border-left: 5px solid #68D9CF;
+    background-color: #F6EFEA;
+    box-shadow: 2px 2px 5px #000;
+    border-radius: 0 3px 3px 0;
+}
+.money .amount {
+    font-weight: bold;
+}
+.music {
+    background: url(https://i.discogs.com/csnTjerrtgmVJ0mT7QeiUQNku05ipEy6jvRT8mRuICE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5ODU4/MjMtMTYxOTM4MTA2/Ni0xOTYxLmpwZWc.jpeg);
+    background-size: cover;
+}
+.shopping-list {
+    background-color: #4784ec;
+    color: #FAF9F6;
+    text-align: center;
+}
+.item-count, .countdown .number {
+    font-size: 5rem;
+}
+.darken {
+    display:block;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%, 0.5);
 }
 
-.space-name {
+.center-card
+{
+    flex: 1;
+    margin: 0.25rem;
+    width: 450px;
+    max-height: 470px;
+    overflow-y: scroll;
+}
+.center-card::-webkit-scrollbar {
+     display: none;  /* Safari and Chrome */
+}
+.music-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 470px;
+    background-size: 470px;
+    background-color: #ccc;
+    background: url(https://i.discogs.com/csnTjerrtgmVJ0mT7QeiUQNku05ipEy6jvRT8mRuICE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5ODU4/MjMtMTYxOTM4MTA2/Ni0xOTYxLmpwZWc.jpeg);
+}
+
+/* Specific styling for the 2x2 grid */
+.two-by-two {
+    flex: 1;
+}
+.nowplaying {
+    display: block;
+    text-align: center;
+}
+.player {
+    background: linear-gradient( 0deg, hsla(339, 16%, 24%, 0.9) 40%, rgba(0,0,0,0)100%);
+    color: #c6ad94;
+    letter-spacing: 0.5px;
+}
+.artist
+{
+    font-size: 1.8rem;
+}
+.progress {
+    margin:1rem;
+    display: flex;
+}
+.played {
     display: inline-block;
+    background-color: #ffba49;
+    height: 10px;
+    width: 100px;
+    margin: auto 0;
+}
+.not-played {
+    display: inline-block;
+    background-color: #c6ad94;
+    height:10px;
+    width:350px;
+    margin: auto 0;
+}
+.played-time, .not-played-time
+{
+    margin: 0 0.3rem;
+}
+.card.weather
+{
+    text-align: center;
+}
+.weather {
+    color: #333;
+    background-color: #e4eaf2;
+}
+.weather-icon
+{
+    margin-top: 0.5rem;
+}
+.weather-text {
+    font-size: 2rem;
+}
+.countdown {
+    text-align: center;
+    background-color: #FFBF00;
+    color: #313639;
 }
 
-.space-amount {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    padding: 0 1rem;
-}

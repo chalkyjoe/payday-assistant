@@ -1,6 +1,5 @@
-﻿@page "/counter"
+﻿@page "/payday22"
 @using AutoBanker
-@using System.Net.Sockets
 
 <PageTitle>Payday</PageTitle>
 
@@ -11,7 +10,7 @@
 </div>
 
 <div class="spaces">
-    @foreach (var space in Spaces)
+    @foreach( var space in Spaces )
     {
         <div class="space @(space.Selected ? "active" : "")" @onclick="() => space.ToggleSelected(RemainingBalance)">
             <p class="space-name">@space.Name</p>
@@ -26,38 +25,38 @@
     public decimal Balance { get; set; }
     public List<SpaceAction> Spaces { get; set; } = new List<SpaceAction>();
     private string AccountId { get; set; }
-    private decimal RemainingBalance => Balance - Spaces.Where(m => m.Selected).Sum(m => m.Amount);
+    private decimal RemainingBalance => Balance - Spaces.Where( m => m.Selected ).Sum( m => m.Amount );
 
     protected override async Task OnInitializedAsync()
     {
-        await GetAccountId();
-        await GetBalance();
+        GetAccountId();
+        await GetBalance(); 
         await GetSavingsGoals();
     }
 
-    private async Task GetAccountId()
+    private void GetAccountId()
     {
-        AccountId = await _starlingService.GetFirstAccount();
+        AccountId = "11f00888-3c2f-4008-9665-563a4906c63c";
     }
 
     private async Task GetSavingsGoals()
     {
-        Spaces = (await _starlingService.GetSavingsGoalsActions(AccountId)).ToList();
+        Spaces = ( await _starlingService.GetSavingsGoalsActions( AccountId ) ).ToList();
     }
 
     async Task GetBalance()
     {
-        Balance = await _starlingService.GetBalance(AccountId);
+        Balance = await _starlingService.GetBalance( AccountId );
     }
 
-    private void OnSpaceClick(SpaceAction space)
+    private void OnSpaceClick( SpaceAction space )
     {
-        if (RemainingBalance - space.Amount <= 0)
+        if( RemainingBalance - space.Amount <= 0 )
             return;
         // Find the index of the space object in the Spaces list
-        int index = Spaces.IndexOf(space);
+        int index = Spaces.IndexOf( space );
 
-        if (index != -1)
+        if( index != -1 )
         {
             // Update the Selected value of the space object in the Spaces list
             Spaces[index].Selected = !Spaces[index].Selected;
@@ -65,16 +64,16 @@
         }
     }
 
-    private async Task PayMe(MouseEventArgs arg)
+    private async Task PayMe( MouseEventArgs arg )
     {
-        foreach (var space in Spaces)
+        foreach( var space in Spaces )
         {
-            if (space.Selected)
+            if( space.Selected )
             {
-                await _starlingService.TransferToSpace(space);
-                await OnInitializedAsync();
+                await _starlingService.TransferToSpace( space );
             }
         }
+        await OnInitializedAsync();
     }
 
 }

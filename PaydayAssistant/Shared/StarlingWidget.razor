@@ -1,0 +1,37 @@
+@using AutoBanker
+<a class="card starling" href="/payday">
+  <div class="money">
+    <div class="name">Main</div>
+    <div class="amount">£@MainBalance</div>
+  </div>
+  <div class="money">
+    <div class="name">Weekly</div>
+    <div class="amount">£@WeeklyBalance</div>
+  </div>
+  <div class="money">
+    <div class="name">Online</div>
+    <div class="amount">£@OnlineBalance</div>
+  </div>
+</a>
+@code {
+  [Inject] private StarlingApi _starlingApi { get; set; }
+  private decimal MainBalance { get; set; }
+  private decimal WeeklyBalance { get; set; } = 0;
+  private decimal OnlineBalance { get; set; } = 0;
+
+  protected override async Task OnInitializedAsync()
+  {
+    var balance = await _starlingApi.GetBalance("11f00888-3c2f-4008-9665-563a4906c63c");
+    MainBalance = balance.EffectiveBalance.AmountInPounds;
+    WeeklyBalance = await GetAmountInPounds("5170e1d0-c02a-4b1a-9452-d275eb50c5d0");
+    OnlineBalance = await GetAmountInPounds( "3fecb60f-0ddf-40b3-9566-1c504da1843a" );
+    await base.OnInitializedAsync(); 
+  }
+
+  private async Task<decimal> GetAmountInPounds( string goalId )
+  {
+    var savingsGoal = await _starlingApi.GetSavingsGoal( "11f00888-3c2f-4008-9665-563a4906c63c", goalId );
+    return savingsGoal.TotalSaved.AmountInPounds;
+  }
+
+}

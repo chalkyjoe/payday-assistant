@@ -60,8 +60,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -72,19 +71,13 @@
       "packagesPath": "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\payday-assistant\\PaydayAssistant\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jack.Hoyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Jack.Hoyle\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -128,8 +121,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.NET.Build.Containers' 0.4.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-p8rx-fwgq-rh2f",
+      "libraryId": "Microsoft.NET.Build.Containers",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

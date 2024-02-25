@@ -1,0 +1,64 @@
+<div class="card countdown">
+    <div class="number">@DaysLeft</div>
+    <div class="text">days until payday</div>
+</div>
+
+@code {
+    private int DaysLeft { get; set; }
+ 
+    protected override void OnInitialized( )
+    { 
+        var now = DateTime.Today;
+        var endOfMonth = GetPayday( now );
+
+        if ( now >= endOfMonth )
+        {
+            endOfMonth = GetPayday( now.AddMonths( 1 ) );
+        }
+        DaysLeft = ( endOfMonth - now ).Days;
+        base.OnInitialized();
+    }
+
+    private DateTime GetPayday( DateTime now )
+    {
+        var endOfMonth = new DateTime( now.Year, now.Month, 1 ).AddMonths( 1 );
+        endOfMonth = endOfMonth.AddDays( -1 );
+        var isLastWorkingDay = false;
+        while ( !isLastWorkingDay )
+        {
+            isLastWorkingDay = WeekDays.Contains( endOfMonth.DayOfWeek ) && !BankHolidays.Contains( endOfMonth.Date );
+            endOfMonth = endOfMonth.AddDays( -1 );
+        }
+
+        return endOfMonth;
+    }
+
+    private readonly List<DayOfWeek> WeekDays = new List<DayOfWeek>
+    {
+        DayOfWeek.Monday,
+        DayOfWeek.Tuesday,
+        DayOfWeek.Wednesday,
+        DayOfWeek.Thursday,
+        DayOfWeek.Friday,
+    };
+
+    private readonly List<DateTime> BankHolidays = new List<DateTime>
+    {
+        new (2024, 03, 29),
+        new (2024, 04, 01),
+        new (2024, 05, 06),
+        new (2024, 05, 27),
+        new (2024, 08, 26),
+        new (2024, 12, 24),
+        new (2024, 12, 26),
+        new (2025, 01, 01),
+        new (2025, 04, 18),
+        new (2025, 04, 21),
+        new (2025, 05, 05),
+        new (2025, 05, 26),
+        new (2025, 08, 25),
+        new (2025, 12, 25),
+        new (2025, 12, 26)
+    };
+
+}

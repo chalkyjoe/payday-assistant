@@ -40,7 +40,6 @@ C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.deps.j
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.runtimeconfig.json
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.dll
 C:\Code\payday-assistant\PaydayAssistant\bin\Debug\net7.0\PaydayAssistant.pdb
-C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.csproj.AssemblyReference.cache
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.GeneratedMSBuildEditorConfig.editorconfig
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.AssemblyInfoInputs.cache
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.AssemblyInfo.cs
@@ -56,7 +55,6 @@ C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\staticwebassets.pack.j
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\staticwebassets.build.json
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\staticwebassets.development.json
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\bundle\PaydayAssistant.styles.css
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\scopedcss\projectbundle\PaydayAssistant.bundle.scp.css
 C:\Code\payday-assistant\PaydayAssistant\obj\Debug\net7.0\PaydayAssistant.dll

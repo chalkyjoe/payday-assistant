@@ -26,7 +26,7 @@ namespace AutoBanker
                 .OrderByDescending(m => m.Selected)
                 .ThenBy(m => m.Amount);
         }
-
+        
         public async Task<bool> TransferToSpace(SpaceAction spaceAction)
         {
             var response = await _starlingApi.TransferToSpace(spaceAction.AccountId, spaceAction.Id, spaceAction.Amount);

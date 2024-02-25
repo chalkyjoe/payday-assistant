@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\starling.css",
+      "PackagePath": "staticwebassets\\css\\starling.css"
+    },
+    {
       "Id": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

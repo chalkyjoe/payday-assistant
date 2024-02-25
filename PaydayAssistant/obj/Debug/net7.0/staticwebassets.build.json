@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AbpAjZRrZC7eRTLrlKi6B+nN9BlevrnCNwi/aVnNhs8=",
+  "Hash": "JGeb9VXDYIzdYkUSsv0sNTSFkEn8c/nNKQAA17YWXMc=",
   "Source": "PaydayAssistant",
   "BasePath": "_content/PaydayAssistant",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "PaydayAssistant",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\",
+      "BasePath": "_content/PaydayAssistant",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -187,23 +204,6 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "PaydayAssistant",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\",
-      "BasePath": "_content/PaydayAssistant",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "PaydayAssistant",
       "SourceType": "Discovered",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\css\\starling.css",
+      "SourceId": "PaydayAssistant",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\",
+      "BasePath": "_content/PaydayAssistant",
+      "RelativePath": "css/starling.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\starling.css"
     },
     {
       "Identity": "C:\\Code\\payday-assistant\\PaydayAssistant\\wwwroot\\favicon.png",

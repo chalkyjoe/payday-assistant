@@ -20,16 +20,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Code/payday-assistant/PaydayAssistant/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Code/payday-assistant/PaydayAssistant/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Code/payday-assistant/PaydayAssistant/Pages/Music.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXVzaWMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Code/payday-assistant/PaydayAssistant/Pages/Payday.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5ZGF5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/payday-assistant/PaydayAssistant/Shared/DaysUntilWidget.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERheXNVbnRpbFdpZGdldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/payday-assistant/PaydayAssistant/Shared/StarlingWidget.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXJsaW5nV2lkZ2V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Code/payday-assistant/PaydayAssistant/Shared/SurveyPrompt.razor]
@@ -43,10 +47,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Code/payday-assistant/PaydayAssistant/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5fe00r0arf
-
-[C:/Code/payday-assistant/PaydayAssistant/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-dq4xv0fu53
 
 [C:/Code/payday-assistant/PaydayAssistant/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
