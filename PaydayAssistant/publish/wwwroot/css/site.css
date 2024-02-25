@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 800px;
+    margin: auto;
+    background-color: hsl(0, 0%, 5%);
+    font-family: "Open Sans", "Microsoft JhengHei", Arial, sans-serif;
+}
+
+.column {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
+    background-color: #ccc;
+    margin: 0.25rem;
+    text-decoration: none;
+}
+
+.starling {
+    background-color: #6935D3;
+    color: #192851;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.money {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem;
+    padding: 0.6rem;
+    border-left: 5px solid #68D9CF;
+    background-color: #F6EFEA;
+    box-shadow: 2px 2px 5px #000;
+    border-radius: 0 3px 3px 0;
+}
+.money .amount {
+    font-weight: bold;
+}
+.music {
+    background: url(https://i.discogs.com/csnTjerrtgmVJ0mT7QeiUQNku05ipEy6jvRT8mRuICE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5ODU4/MjMtMTYxOTM4MTA2/Ni0xOTYxLmpwZWc.jpeg);
+    background-size: cover;
+}
+.shopping-list {
+    background-color: #4784ec;
+    color: #FAF9F6;
+    text-align: center;
+}
+.item-count, .countdown .number {
+    font-size: 5rem;
+}
+.darken {
+    display:block;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%, 0.5);
+}
+
+.center-card
+{
+    flex: 1;
+    margin: 0.25rem;
+    width: 450px;
+    max-height: 470px;
+    overflow-y: scroll;
+}
+.center-card::-webkit-scrollbar {
+     display: none;  /* Safari and Chrome */
+}
+.music-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 470px;
+    background-size: 470px;
+    background-color: #ccc;
+    background: url(https://i.discogs.com/csnTjerrtgmVJ0mT7QeiUQNku05ipEy6jvRT8mRuICE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5ODU4/MjMtMTYxOTM4MTA2/Ni0xOTYxLmpwZWc.jpeg);
+}
+
+/* Specific styling for the 2x2 grid */
+.two-by-two {
+    flex: 1;
+}
+.nowplaying {
+    display: block;
+    text-align: center;
+}
+.player {
+    background: linear-gradient( 0deg, hsla(339, 16%, 24%, 0.9) 40%, rgba(0,0,0,0)100%);
+    color: #c6ad94;
+    letter-spacing: 0.5px;
+}
+.artist
+{
+    font-size: 1.8rem;
+}
+.progress {
+    margin:1rem;
+    display: flex;
+}
+.played {
+    display: inline-block;
+    background-color: #ffba49;
+    height: 10px;
+    width: 100px;
+    margin: auto 0;
+}
+.not-played {
+    display: inline-block;
+    background-color: #c6ad94;
+    height:10px;
+    width:350px;
+    margin: auto 0;
+}
+.played-time, .not-played-time
+{
+    margin: 0 0.3rem;
+}
+.card.weather
+{
+    text-align: center;
+}
+.weather {
+    color: #333;
+    background-color: #e4eaf2;
+}
+.weather-icon
+{
+    margin-top: 0.5rem;
+}
+.weather-text {
+    font-size: 2rem;
+}
+.countdown {
+    text-align: center;
+    background-color: #FFBF00;
+    color: #313639;
+}
+
