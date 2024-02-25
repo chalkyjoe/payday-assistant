@@ -1,21 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qP+vvq9pSN3YMZ5MUiZ4V7gSsDg/WHTfX5GREXOnz0Uxzho1YyZmbYj8maNLsqolAcXrA+L0mkLUOhE+NygbHw==",
+  "dgSpecHash": "O85dYa8ym83Uckyz5AgcZVQsXRCGX5cb60pS+7OcoeswXbuar/kIVeKXcob6xX4kYe+ioIOTT+O3xmIrCC3cNA==",
   "success": true,
   "projectFilePath": "C:\\Code\\payday-assistant\\PaydayAssistant\\PaydayAssistant.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.net.build.containers\\0.4.0\\microsoft.net.build.containers.0.4.0.nupkg.sha512"
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.net.build.containers\\0.4.0\\microsoft.net.build.containers.0.4.0.nupkg.sha512",
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm64\\7.0.15\\microsoft.netcore.app.runtime.linux-arm64.7.0.15.nupkg.sha512",
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm64\\7.0.15\\microsoft.aspnetcore.app.runtime.linux-arm64.7.0.15.nupkg.sha512",
+    "C:\\Users\\Jack.Hoyle\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm64\\7.0.15\\microsoft.netcore.app.host.linux-arm64.7.0.15.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.NET.Build.Containers' 0.4.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-p8rx-fwgq-rh2f",
-      "libraryId": "Microsoft.NET.Build.Containers",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

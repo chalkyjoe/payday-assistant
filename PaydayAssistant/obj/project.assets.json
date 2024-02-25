@@ -9,6 +9,15 @@
           "build/Microsoft.NET.Build.Containers.targets": {}
         }
       }
+    },
+    "net7.0/linux-arm64": {
+      "Microsoft.NET.Build.Containers/0.4.0": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.Build.Containers.props": {},
+          "build/Microsoft.NET.Build.Containers.targets": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -113,6 +122,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-arm64",
+            "version": "[7.0.15, 7.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.linux-arm64",
+            "version": "[7.0.15, 7.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -123,18 +146,11 @@
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
       }
+    },
+    "runtimes": {
+      "linux-arm64": {
+        "#import": []
+      }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.NET.Build.Containers' 0.4.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-p8rx-fwgq-rh2f",
-      "libraryId": "Microsoft.NET.Build.Containers",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }
